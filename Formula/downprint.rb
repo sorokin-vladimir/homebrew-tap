@@ -5,28 +5,28 @@
 class Downprint < Formula
   desc "Convert Markdown to PDF with GitHub-like styling via headless Chrome"
   homepage "https://github.com/sorokin-vladimir/downprint"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.0.0/downprint_darwin_amd64.tar.gz"
-      sha256 "a825b494d6ad61b99ba9f9b2c077ddc644462747eed474e973ff0a485aae0c56"
+      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.1.0/downprint_darwin_amd64.tar.gz"
+      sha256 "c0a35c50016fa6c0d2c6a0cfd1f6dd658c475788537df966d8bd9ce27dfc44ec"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.0.0/downprint_darwin_arm64.tar.gz"
-      sha256 "bac854e1472e1e50c1c2a61a21c3ee52dae77477efded407a23b6adf4cc7b11f"
+      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.1.0/downprint_darwin_arm64.tar.gz"
+      sha256 "724af450b203cd2abd48f2ea387c44c87c2b5d15f98da2b44024cfbaf43cc3de"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.0.0/downprint_linux_amd64.tar.gz"
-      sha256 "4a1305838060520d834d3610a0c54b809cbf095ca00def0b60edbf706ef26c27"
+      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.1.0/downprint_linux_amd64.tar.gz"
+      sha256 "f1b36e1e581cff1f9c9bb4624af971908a87a395d88f263598e35b9402681429"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.0.0/downprint_linux_arm64.tar.gz"
-      sha256 "559c2a85b0809e10bacadbf45eb710a8b47558fa1d1fd7aec9249d71a5fb04f4"
+      url "https://github.com/sorokin-vladimir/downprint/releases/download/v1.1.0/downprint_linux_arm64.tar.gz"
+      sha256 "c94236543545babfb8a97d3fca9da8d54db661b31befb145ce688901dcab8e63"
     end
   end
 
