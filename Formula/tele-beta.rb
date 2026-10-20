@@ -5,26 +5,26 @@
 class TeleBeta < Formula
   desc "TUI Telegram client (beta channel)"
   homepage "https://github.com/sorokin-vladimir/tele"
-  version "2.0.0-beta.7"
+  version "2.0.0-beta.8"
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.7/tele_darwin_amd64.tar.gz"
-      sha256 "f08617378fbf7ee231d54e8d8dfc6e3b74e426251351e8b87547e489c82e53ae"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.8/tele_darwin_amd64.tar.gz"
+      sha256 "f885988857b95b984462ac7619162c46a58fb33257e66e53e18f557eee11eaf3"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.7/tele_darwin_arm64.tar.gz"
-      sha256 "db62e1e31e49be0597b9a7cfb7631e735f6336434b7b0f68226b4194eae34924"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.8/tele_darwin_arm64.tar.gz"
+      sha256 "ae6a9a0d6d14f6a5d6cd5f40aa960c336cb58c0200ea68219a776e5056e829a5"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.7/tele_linux_amd64.tar.gz"
-      sha256 "c42e7a6f1df9796e33358942ff35fe7274a5f4052ed44021c6c88418bcc63c18"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.8/tele_linux_amd64.tar.gz"
+      sha256 "0adb90b97589905445e467f0c527d8f0d2cb81f805debc2f9734651ff57fa705"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.7/tele_linux_arm64.tar.gz"
-      sha256 "4666a5def5585f882a2ab25f6fd98b27107caad429b64a13c16c65ead2e37b2e"
+      url "https://github.com/sorokin-vladimir/tele/releases/download/v2.0.0-beta.8/tele_linux_arm64.tar.gz"
+      sha256 "8f9ebaa5f1f9707bec2ae0c6d36ac2cb70ca15fc05062281f539797d54f99f2c"
     end
   end
 
